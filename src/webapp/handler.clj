@@ -4,7 +4,8 @@
             [compojure.handler :as handeler]
             [compojure.route :as route]
             [ring.middleware.defaults :refer :all]
-            [ring.util.response :as response]))
+            [ring.util.response :as response]
+            [webapp.controllers.posts :as posts-controller]))
 
 (defn say-hello [name]
   (str "<h1>Hello " name "!</h1>"))
@@ -19,7 +20,9 @@
 (cc/defroutes app-routes
               (cc/GET "/"
                       []
-                      (response/redirect "index.html"))
+                      (posts-controller/index)
+                      ;(response/redirect "index.html")
+                      )
               (route/resources "/")
               (route/not-found "Not Found"))
 

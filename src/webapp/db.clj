@@ -1,10 +1,10 @@
-;(ns webapp.db
-;(:require [clojure.java.jdbc :as sql]) )
-;
-;(def db-spec {:classname   "org.h2.Driver"
-;              :subprotocol "h2:file"
-;              :subname     "db/webapp"})
-;
+(ns webapp.db
+(:require [clojure.java.jdbc :as sql]) )
+
+(def db-spec {:classname   "org.h2.Driver"
+              :subprotocol "h2:file"
+              :subname     "db/webapp"})
+
 ;(defn add-location-to-db
 ;  [x y]
 ;  (let [results (sql/with-connection db-spec
