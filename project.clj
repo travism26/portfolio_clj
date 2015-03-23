@@ -7,7 +7,8 @@
                  [ring/ring-defaults "0.1.4"]
                  [hiccup "1.0.5"]
                  [org.clojure/java.jdbc "0.3.6"]
-                 [com.h2database/h2 "1.4.186"]
+                 [mysql/mysql-connector-java "5.1.34"]
+                 ;[com.h2database/h2 "1.4.186"]
                  [de.ubercode.clostache/clostache "1.4.0"]]
   :plugins [[lein-ring "0.8.13"]]
   :ring {:handler webapp.handler/app}
@@ -16,5 +17,4 @@
                         [ring-mock "0.1.5"]
                         [hiccup "1.0.5"]
                         [ring/ring-defaults "0.1.4"]
-                        [org.clojure/java.jdbc "0.3.6"]
-                        [com.h2database/h2 "1.4.186"]]}})
+                        [org.clojure/java.jdbc "0.3.6"]]}})

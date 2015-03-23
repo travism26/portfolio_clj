@@ -1,6 +1,7 @@
 (ns webapp.controllers.posts
 (:require
-  [clostache.parser :as clostache]))
+  [clostache.parser :as clostache]
+  [webapp.models.posts :as posts-model]))
 
 (defn read-template [template-name]
   (slurp (clojure.java.io/resource
@@ -10,4 +11,4 @@
   (clostache/render (read-template template-file) params))
 
 (defn index []
-  (render-template "index" {:name "Travis A Martin"}))
+  (render-template "index" {:posts (posts-model/all)}))
