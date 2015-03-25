@@ -11,7 +11,7 @@
      [:title title]]
     [:body
      [:div {:id "header"}
-      [:h1 "COUCH SHOUTER"]]
+      [:h1 "Travis Martin"]]
      [:div {:id "content"} body]]))
 
 (defn four-oh-four []

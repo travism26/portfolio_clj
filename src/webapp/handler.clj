@@ -20,9 +20,15 @@
 (cc/defroutes app-routes
               (cc/GET "/"
                       []
-                      (posts-controller/index)
+                      (posts-controller/layout)
                       ;(response/redirect "index.html")
                       )
+              (cc/GET "/layout"
+                      []
+                      "hello"
+                      ;(posts-controller/layout)
+                      )
+              (GET "/www" [] "hi")
               (route/resources "/")
               (route/not-found "Not Found"))
 
