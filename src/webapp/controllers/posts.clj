@@ -2,7 +2,8 @@
 (:require
   [clostache.parser :as clostache]
   [webapp.models.posts :as posts-model]
-  [public.layout :as layout]))
+  [public.layout :as layout])
+  )
 
 (defn read-template [template-name]
   (slurp (clojure.java.io/resource
@@ -15,4 +16,5 @@
   (render-template "index" {:posts (posts-model/all)}))
 
 (defn layout []
-  (layout/index-page))
+  (layout/index-page )
+  )
