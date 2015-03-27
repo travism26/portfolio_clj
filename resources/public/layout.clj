@@ -27,9 +27,6 @@
      (header)
      (about-section)
      (services)
-     [:div
-      [:h1 {:class "info"} "Hiccup"]
-      ]
      ]))
 
 (defhtml header []
@@ -79,7 +76,32 @@
           [:i {:class "fa fa-cloud fa-stack-1x text-primary"}]]
          [:h4 [:stong "SOME TITLE"]]
          [:p "SOME DESCRIPTION"]
-         ]]]]]]])
+         ]]
+       [:div {:class "col-md-3 col-sm-6"}
+        [:div {:class "service-item"}
+         [:span {:class "fa-stack fa-4x"}
+          [:i {:class "fa fa-circle fa-stack-2x"}]
+          [:i {:class "fa fa-compass fa-stack-1x text-primary"}]]
+         [:h4 [:stong "SOME TITLE"]]
+         [:p "SOME DESCRIPTION"]
+         ]]
+       [:div {:class "col-md-3 col-sm-6"}
+        [:div {:class "service-item"}
+         [:span {:class "fa-stack fa-4x"}
+          [:i {:class "fa fa-circle fa-stack-2x"}]
+          [:i {:class "fa fa-flask fa-stack-1x text-primary"}]]
+         [:h4 [:stong "SOME TITLE"]]
+         [:p "SOME DESCRIPTION"]
+         ]]
+       [:div {:class "col-md-3 col-sm-6"}
+        [:div {:class "service-item"}
+         [:span {:class "fa-stack fa-4x"}
+          [:i {:class "fa fa-circle fa-stack-2x"}]
+          [:i {:class "fa fa-shield fa-stack-1x text-primary"}]]
+         [:h4 [:stong "SOME TITLE"]]
+         [:p "SOME DESCRIPTION"]
+         ]]
+       ]]]]])
 
 (defn services-layout []
   [:section {:id "service" :class "services bg-primary"}
@@ -96,7 +118,16 @@
           [:i {:class "fa fa-cloud fa-stack-1x text-primary"}]]
          [:h4 [:stong "SOME TITLE"]]
          [:p "SOME DESCRIPTION"]
-         ]]]]]]])
+         ]]
+       [:div {:class "col-md-3 col-sm-6"}
+        [:div {:class "service-item"}
+         [:span {:class "fa-stack fa-4x"}
+          [:i {:class "fa fa-circle fa-stack-2x"}]
+          [:i {:class "fa fa-cloud fa-stack-1x text-primary"}]]
+         [:h4 [:stong "SOME TITLE"]]
+         [:p "SOME DESCRIPTION"]
+         ]]
+       ]]]]])
 
 ;<div class="col-lg-10 col-lg-offset-1">
 
